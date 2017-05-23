@@ -14,10 +14,12 @@ Before compiling codes, the following software should be installed in your syste
 - nodes are products, edges are co-purchase relationships
 - top 5000 communities with ground truth size >= 3
 ## How to run
+'''
 $ cd codes 
 $ matlab 
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
 $ LOSP(WalkMode,d,k,alpha,TruncateMode,beta) 
+'''
 Command Options
 WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized
 d: dimension of local spectral subspace
