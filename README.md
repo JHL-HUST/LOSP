@@ -1,2 +1,2 @@
 # LOSP
-Algorithms in Matlab for "Detecting Overlapping Communities from Local Spectral Subspaces", to be added soon.
+Algorithms in Matlab for "Local Spectral Method for Semi-supervised Community Detection".
