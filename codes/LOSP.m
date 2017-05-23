@@ -93,7 +93,7 @@ if TruncateMode == 2
     detectedComm = sample(I(1:index));
 end
 
-% compute precision, recall and F1 score
+% compute F1 score
 jointSet = intersect(detectedComm,comm{commId});
 jointLen = length(jointSet);
 F1 = 2*jointLen/(length(detectedComm)+length(comm{commId}));
@@ -104,7 +104,7 @@ disp(detectedComm')
 fprintf('The F1 score between detected community and ground truth community is %.3f\n',F1)
 
 % save out result
-savePathandName = '../example/amazon/output.txt';
+savePathandName = '../example/amazon/output_LOSP.txt';
 dlmwrite(savePathandName,'The detected community is','delimiter','');
 dlmwrite(savePathandName,detectedComm','-append','delimiter','\t','precision','%.0f');
 dlmwrite(savePathandName,'The F1 score between detected community and ground truth community is','-append','delimiter','');
