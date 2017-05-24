@@ -45,12 +45,19 @@ Please email to panshi@hust.edu.cn or setup an issue if you have any problems or
 
 Please cite our papers if you use the code in your paper:
 ```
-@inproceedings{ hsbhl:LOSP,
+@inproceedings{hsbhl:LOSP,
   author = "Kun He and Yiwei Sun and David Bindel and John Hopcroft and Yixuan Li",
   title = "Detecting Overlapping Communities from Local Spectral Subspaces",
   booktitle = "ICDM",
   pages = "769-774",
   year = "2015"
+}
+
+@inproceedings{he2016local,
+  author = "Kun He and Pan Shi and John Hopcroft and David Bindel",
+  title = "Local Spectral Diffusion for Robust Community Detection",
+  booktitle = "SIGKDD Twelfth Workshop on Mining and Learning with Graphs",
+  year = "2016"
 }
 ```
 ### Acknowledgement
