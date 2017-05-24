@@ -8,7 +8,7 @@ Before compiling codes, the following software should be installed in your syste
 - SNAP datasets (available at http://snap.stanford.edu/data/)
 - Isobase datasets (available at http://cb.csail.mit.edu/cb/mna/isobase/) 
 - LFR benchmark graphs (available at http://sites.google.com/site/santofortunato/inthepress2/)
-## Example dataset
+### Example dataset
 - Amazon dataset (available at http://snap.stanford.edu/data/com-Amazon.html)
 - nodes: 334863, edges: 925872 
 - nodes are products, edges are co-purchase relationships
@@ -43,7 +43,7 @@ You should have received a copy of the GNU General Public License along with thi
 ### Notification
 Please email to panshi@hust.edu.cn or setup an issue if you have any problems or find any bugs.
 
-Please cite our papers if you use the code in your paper:
+Please cite our papers if you use the codes in your paper:
 ```
 @inproceedings{hsbhl:LOSP,
   author = "Kun He and Yiwei Sun and David Bindel and John Hopcroft and Yixuan Li",
