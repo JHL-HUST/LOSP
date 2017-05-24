@@ -22,14 +22,9 @@ $ LOSP(WalkMode,d,k,alpha,TruncateMode,beta)
 ```
 Command Options
 
-WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized
-
-d: dimension of local spectral subspace
-
-k: number of random walk steps
-
-alpha: a parameter of random walk diffusion
-
-TruncateMode: 1: truncation by truth size, 2: truncation by local minimal conductance
-
-beta: a parameter of local minimal conductance
+WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized  
+d: dimension of local spectral subspace  
+k: number of random walk steps  
+alpha: a parameter of random walk diffusion  
+TruncateMode: 1: truncation by truth size, 2: truncation by local minimal conductance  
+beta: a parameter of local minimal conductance  
