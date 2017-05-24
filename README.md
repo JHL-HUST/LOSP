@@ -34,20 +34,26 @@ TruncateMode: 1: truncation by truth size, 2: truncation by local minimal conduc
 
 beta: a parameter controls local minimal conductance (default: 1.02)
 ## Announcements
-
 ### Licence
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
-
+You should have received a copy of the GNU General Public License along with this program. If not, see http://fsf.org/.
 ### Notification
-
-Please email to us or setup an issue if you have any problems or find any bugs.
+Please email to panshi@hust.edu.cn or setup an issue if you have any problems or find any bugs.
 
 Please cite our papers if you use the code in your paper:
+```
+@inproceedings{ hsbhl:LOSP,
+  author = "Kun He and Yiwei Sun and David Bindel and John Hopcroft and Yixuan Li",
+  title = "Detecting Overlapping Communities from Local Spectral Subspaces",
+  booktitle = "ICDM",
+  pages = "769-774",
+  year = "2015"
+}
+```
 ### Acknowledgement
-
-In the program, we incorporates some open source codes as baseline algorithms from the following websites:
-
+In the program, we incorporate some open source codes as baseline algorithms from the following websites:
+- [HK](https://github.com/kkloste/hkgrow)
+- [PR](https://www.cs.purdue.edu/homes/dgleich/codes/neighborhoods/)
