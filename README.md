@@ -20,7 +20,7 @@ $ matlab
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
 $ LOSP(WalkMode,d,k,alpha,TruncateMode,beta) 
 ```
-Command Options
+### Command Options:
 
 WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized [default: 2]
 
