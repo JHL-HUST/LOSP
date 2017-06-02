@@ -15,7 +15,7 @@ Before compiling codes, the following software should be installed in your syste
 - top 5000 communities with ground truth size >= 3
 ## How to run
 ```
-$ cd codes 
+$ cd LOSP_codes 
 $ matlab 
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
 $ LOSP(WalkMode,d,k,alpha,TruncateMode,beta) 
