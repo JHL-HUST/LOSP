@@ -1,8 +1,8 @@
 function [] = PR() 
 % PageRank Based community Detection
 
-graphPath = '../example/Amazon/graph';
-communityPath = '../example/Amazon/community';
+graphPath = '../../example/Amazon/graph';
+communityPath = '../../example/Amazon/community';
 
 % load graph
 graph = loadGraph(graphPath);
@@ -31,7 +31,7 @@ disp(set')
 fprintf('The F1 score between detected community and ground truth community is %.3f\n',F1)
 
 % save out result
-savePathandName = '../example/Amazon/output_PR.txt';
+savePathandName = '../../example/Amazon/output_PR.txt';
 dlmwrite(savePathandName,'The detected community is','delimiter','');
 dlmwrite(savePathandName,set','-append','delimiter','\t','precision','%.0f');
 dlmwrite(savePathandName,'The F1 score between detected community and ground truth community is','-append','delimiter','');
