@@ -31,8 +31,8 @@ if nargin < 6
     beta = 1.02;
 end
 
-graphPath = '../example/amazon/graph';
-communityPath = '../example/amazon/community';
+graphPath = '../example/Amazon/graph';
+communityPath = '../example/Amazon/community';
 
 % load graph
 graph = loadGraph(graphPath);
@@ -104,7 +104,7 @@ disp(detectedComm')
 fprintf('The F1 score between detected community and ground truth community is %.3f\n',F1)
 
 % save out result
-savePathandName = '../example/amazon/output_LOSP.txt';
+savePathandName = '../example/Amazon/output_LOSP.txt';
 dlmwrite(savePathandName,'The detected community is','delimiter','');
 dlmwrite(savePathandName,detectedComm','-append','delimiter','\t','precision','%.0f');
 dlmwrite(savePathandName,'The F1 score between detected community and ground truth community is','-append','delimiter','');
