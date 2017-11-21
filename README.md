@@ -1,5 +1,5 @@
 # LOSP
-These codes are for our paper "Local Spectral Method for Semi-supervised Community Detection"
+These codes are for our paper "Krylov Subspace Approximation for Local Community Detection"
 ## Requirements
 Before compiling codes, the following software should be installed in your system.
 - Matlab
