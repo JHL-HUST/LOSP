@@ -62,7 +62,10 @@ subgraph = graph(sample,sample);
 p = zeros(1,length(sample));
 [~, ind] = intersect(sample,seed);
 p(ind) = 1/length(ind);
+% local spectral subspace built on Nrw^T
 V = Walk(subgraph,p,d,k,WalkMode,alpha);
+% local spectral subspace built on Nrw
+% V = Walk_Nrw(subgraph,p,d,k,WalkMode,alpha);
 
 % get sparse vector by linear programming
 v = pos1norm(V,ind);
