@@ -53,6 +53,7 @@ sample = SampleGraph(seed,graph);
 % preprocessing, delete isolated nodes
 subgraph = graph(sample,sample);
 idx = find(sum(subgraph)==0);
+
 if length(idx) > 0
     sample = setdiff(sample,sample(idx));
 end
