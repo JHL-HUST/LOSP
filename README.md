@@ -1,7 +1,7 @@
 # LOSP
 These codes are for our paper "Detecting Overlapping Communities from Local Spectral Subspaces"
 # LOSP_Plus
-LOSP_Plus are variants and simplification of LOSP, and the codes are for our paper "Krylov Subspace Approximation for Local Community Detection"
+LOSP Plus are variants and simplification of LOSP, and the codes are for our paper "Krylov Subspace Approximation for Local Community Detection"
 ## Requirements
 Before compiling codes, the following software should be installed in your system.
 - Matlab
@@ -15,12 +15,19 @@ Before compiling codes, the following software should be installed in your syste
 - nodes: 334863, edges: 925872 
 - nodes are products, edges are co-purchase relationships
 - top 5000 communities with ground truth size >= 3
-## How to run
+## How to run LOSP
 ```
 $ cd LOSP_codes 
 $ matlab 
+$ LOSP
+```
+### Command Options:
+## How to run LOSP_Plus
+```
+$ cd LOSP_Plus_codes
+$ matlab 
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
-$ LOSP(WalkMode,d,k,alpha,TruncateMode,beta) 
+$ LOSP_Plus(WalkMode,d,k,alpha,TruncateMode,beta) 
 ```
 ### Command Options:
 
