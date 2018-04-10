@@ -28,7 +28,7 @@ $ matlab
 $ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
 $ LOSP_Plus(WalkMode,d,k,alpha,TruncateMode,beta) 
 ```
-### Command Options:
+### Command Options for LOSP_Plus algorithm:
 
 WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized (default: 2)
 
@@ -82,6 +82,13 @@ Please cite our papers if you use the codes in your paper:
   booktitle = "SIGKDD Twelfth Workshop on Mining and Learning with Graphs",
   year = "2016"
 }
+
+@article{he2017krylov,
+    title={Krylov Subspace Approximation for Local Community Detection},
+    author={He, Kun and Shi, Pan and Bindel, David and Hopcroft, John E},
+    journal={arXiv preprint arXiv:1712.04823},
+    year={2017}
+    }
 ```
 ### Acknowledgement
 In the program, we incorporate some open source codes as baseline algorithms from the following websites:
