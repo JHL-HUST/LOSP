@@ -18,7 +18,7 @@ seedId = randperm(length(comm{commId}),3);
 seed = comm{commId}(seedId);
 
 % detect community by heat kernel diffusion
-[set,conductance,cut,volume] = hkgrow1(graph,seed);
+[set,conductance,cut,volume] = hkgrow(graph,seed);
 
 % compute F1 score
 jointSet = intersect(set,comm{commId});
