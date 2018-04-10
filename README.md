@@ -1,8 +1,7 @@
 # LOSP
 These codes are for our paper "Detecting Overlapping Communities from Local Spectral Subspaces"
 # LOSP_Plus
-LOSP_Plus are variants and simplification of LOSP
-These codes are for our paper "Krylov Subspace Approximation for Local Community Detection"
+LOSP_Plus are variants and simplification of LOSP, and the codes are for our paper "Krylov Subspace Approximation for Local Community Detection"
 ## Requirements
 Before compiling codes, the following software should be installed in your system.
 - Matlab
