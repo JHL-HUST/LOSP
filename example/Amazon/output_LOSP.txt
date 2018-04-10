@@ -1,0 +1,4 @@
+The detected community is
+77764	175959	185815	257932	325246	41338	202326
+The F1 score between detected community and ground truth community is
+0.923
