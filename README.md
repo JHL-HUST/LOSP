@@ -15,14 +15,13 @@ Before compiling codes, the following software should be installed in your syste
 - nodes: 334863, edges: 925872 
 - nodes are products, edges are co-purchase relationships
 - top 5000 communities with ground truth size >= 3
-## How to run LOSP
+## How to run LOSP algorithm
 ```
 $ cd LOSP_codes 
 $ matlab 
 $ LOSP
 ```
-### Command Options:
-## How to run LOSP_Plus
+## How to run LOSP_Plus algorithm
 ```
 $ cd LOSP_Plus_codes
 $ matlab 
@@ -42,6 +41,21 @@ alpha: a parameter controls random walk diffusion (default: 1)
 TruncateMode: 1: truncation by truth size, 2: truncation by local minimal conductance (default: 2)
 
 beta: a parameter controls local minimal conductance (default: 1.02)
+## How to run baseline algorithms
+### run HK algorithm
+```
+$ cd baseline_codes/HK
+$ matlab 
+$ mex -largeArrayDims hkgrow_mex.cpp   % compile the mex file 
+$ HK
+```
+### run PR algorithm
+```
+$ cd baseline_codes/PR
+$ matlab 
+$ mex -largeArrayDims pprgrow_mex.cc   % compile the mex file 
+$ PR
+```
 ## Announcements
 ### Licence
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
