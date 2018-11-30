@@ -6,8 +6,6 @@ Before compiling codes, the following software should be installed in your syste
 - gcc (for Linux and Mac) or Microsoft Visual Studio (for Windows)
 ## Datasets Information
 - SNAP datasets (available at http://snap.stanford.edu/data/)
-- Isobase datasets (available at http://cb.csail.mit.edu/cb/mna/isobase/) 
-- LFR benchmark graphs (available at http://sites.google.com/site/santofortunato/inthepress2/)
 ### Example dataset
 - Amazon dataset (available at http://snap.stanford.edu/data/com-Amazon.html)
 - nodes: 334863, edges: 925872 
