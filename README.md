@@ -17,40 +17,19 @@ $ cd LOSP_codes
 $ matlab 
 $ LOSP
 ```
-## How to run LOSP_Plus algorithm
-```
-$ cd LOSP_Plus_codes
-$ matlab 
-$ mex -largeArrayDims GetLocalCond.c   % compile the mex file 
-$ LOSP_Plus(WalkMode,d,k,alpha,TruncateMode,beta) 
-```
-### Command Options for LOSP_Plus algorithm:
-
-WalkMode: 1: standard, 2: light lazy, 3: lazy, 4: personalized (default: 2)
-
-d: dimension of local spectral subspace (default: 2)
-
-k: number of random walk steps (default: 3)
-
-alpha: a parameter controls random walk diffusion (default: 1)
-
-TruncateMode: 1: truncation by truth size, 2: truncation by local minimal conductance (default: 2)
-
-beta: a parameter controls local minimal conductance (default: 1.02)
 ## How to run baseline algorithms
+### run LEMON algorithm
+```
+$ cd baseline_codes/LEMON
+$ matlab 
+$ LEMON
+```
 ### run HK algorithm
 ```
 $ cd baseline_codes/HK
 $ matlab 
 $ mex -largeArrayDims hkgrow_mex.cpp   % compile the mex file 
 $ HK
-```
-### run PR algorithm
-```
-$ cd baseline_codes/PR
-$ matlab 
-$ mex -largeArrayDims pprgrow_mex.cc   % compile the mex file 
-$ PR
 ```
 ## Announcements
 ### Licence
@@ -71,22 +50,8 @@ Please cite our papers if you use the codes in your paper:
   pages = "769-774",
   year = "2015"
 }
-
-@inproceedings{he2016local,
-  author = "Kun He and Pan Shi and John Hopcroft and David Bindel",
-  title = "Local Spectral Diffusion for Robust Community Detection",
-  booktitle = "SIGKDD Twelfth Workshop on Mining and Learning with Graphs",
-  year = "2016"
-}
-
-@article{he2017krylov,
-    title={Krylov Subspace Approximation for Local Community Detection},
-    author={He, Kun and Shi, Pan and Bindel, David and Hopcroft, John E},
-    journal={arXiv preprint arXiv:1712.04823},
-    year={2017}
-    }
 ```
 ### Acknowledgement
 In the program, we incorporate some open source codes as baseline algorithms from the following websites:
+- [LEMON](https://github.com/yixuanli/lemon)
 - [HK](https://github.com/kkloste/hkgrow)
-- [PR](https://www.cs.purdue.edu/homes/dgleich/codes/neighborhoods/)
