@@ -15,7 +15,7 @@ end
 
 cut = min(5,maxCommSize-1);
 
-findCommSizefirst = find(abs(diff(w(cut:maxCommSize,1))) == max(abs(diff(w(cut:maxCommSize,1))))) + cut;
+findCommSizefirst = find(abs(diff(w(cut:maxCommSize,1))) == max(abs(diff(w(cut:maxCommSize,1)))),1) + cut;
 LocalMinfirst = conductances(1,findCommSizefirst);
 LocalMin = LocalMinfirst;
 findCommSize = findCommSizefirst;

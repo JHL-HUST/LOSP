@@ -34,5 +34,6 @@ fprintf('The F1 score between detected community and ground truth community is %
 savePathandName = '../../example/Amazon/output_HK.txt';
 dlmwrite(savePathandName,'The detected community is','delimiter','');
 dlmwrite(savePathandName,set','-append','delimiter','\t','precision','%.0f');
-dlmwrite(savePathandName,'The F1 score between detected community and ground truth community is','-append','delimiter','');
-dlmwrite(savePathandName,F1,'-append','delimiter','\t','precision','%.3f');
+dlmwrite(savePathandName,['The F1 score between detected community and ground truth community are ' num2str(F1,'%.3f')],'-append','delimiter','');
+
+end
